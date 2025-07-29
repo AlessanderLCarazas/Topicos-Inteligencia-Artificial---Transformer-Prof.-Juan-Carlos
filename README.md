@@ -340,7 +340,7 @@ g++ -std=c++17 -O3 -I clases -o transformer main.cpp cpp/transformer.cpp cpp/tra
 ```bash
 g++ -std=c++17 -O3 -I clases -o predecir predecir_imagen.cpp cpp/transformer.cpp cpp/trainer.cpp cpp/matrix.cpp cpp/layers.cpp cpp/activations.cpp cpp/adam_optimizer.cpp
 ./predecir
-
+```
 **Funcionalidades:**
 
 - Carga datasets MNIST desde CSV
