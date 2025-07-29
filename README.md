@@ -1,5 +1,14 @@
 # Vision Transformer (ViT) Implementation in C++
 
+## 👨‍🏫 Integrantes del Proyecto
+
+- **Apaza Condori, Jhon Antony**  
+- **Carazas Quispe, Alessander Jesus**  
+- **Mariños Hilario, Princce Yorwin**  
+- **Mena Quispe, Sergio Sebastian Santos**
+
+---
+
 ## 📋 Roadmap Completo de la Arquitectura del Transformer
 
 ### 🎯 Objetivo del Proyecto
@@ -318,14 +327,19 @@ VisionTransformer model(
 
 ---
 
-## 🚀 Programas de Ejecución
+## ⚙️ Compilación
 
-### **1. Entrenamiento Principal** (`main.cpp`)
+### 🧪 Entrenamiento
 
 ```bash
-g++ -o main main.cpp cpp/*.cpp -std=c++17
-./main
+g++ -std=c++17 -O3 -I clases -o transformer main.cpp cpp/transformer.cpp cpp/trainer.cpp cpp/matrix.cpp cpp/layers.cpp cpp/activations.cpp cpp/adam_optimizer.cpp
+./transformer
 ```
+
+## 🔍 Predicción de Imagen
+```bash
+g++ -std=c++17 -O3 -I clases -o predecir predecir_imagen.cpp cpp/transformer.cpp cpp/trainer.cpp cpp/matrix.cpp cpp/layers.cpp cpp/activations.cpp cpp/adam_optimizer.cpp
+./predecir
 
 **Funcionalidades:**
 
