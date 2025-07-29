@@ -52,6 +52,9 @@ Topicos-Inteligencia-Artificial---Transformer/
 A continuación se muestra un esquema general del modelo Vision Transformer, que ha sido implementado en este proyecto:
 
 <img width="865" height="481" alt="image" src="https://github.com/user-attachments/assets/56a5f093-1e9a-42f1-898c-199f3ea5f4d8" />
+
+### Descripción general:
+
 - La imagen de entrada se divide en pequeños **parches** (por ejemplo, de 7x7 píxeles).
 - Cada parche es **aplanado** y proyectado linealmente a un vector.
 - Se agrega un **token especial `[class]`** al inicio y se suman los embeddings posicionales.
@@ -375,9 +378,9 @@ g++ -std=c++17 -O3 -I clases -o predecir predecir_imagen.cpp cpp/transformer.cpp
 
 ### **3. Conversión de Imágenes** (convertir_imagen_a_csv.py)
 
-bash
+```bash
 python convertir_imagen_a_csv.py
-
+```
 
 **Funcionalidades:**
 
@@ -409,6 +412,8 @@ python convertir_imagen_a_csv.py
 A continuación se presenta la evolución del rendimiento del modelo Vision Transformer (ViT) entrenado con el dataset MNIST. El gráfico de la izquierda muestra la precisión alcanzada por época, mientras que el de la derecha representa la función de pérdida.
 
 <img width="1189" height="490" alt="image" src="https://github.com/user-attachments/assets/07cd345d-bb52-4b5a-9ac5-d7796d28fa79" />
+
+
 Durante las 50 épocas de entrenamiento, el modelo logró mejorar progresivamente su precisión hasta alcanzar aproximadamente un **75%**, mientras que la **pérdida (loss)** se redujo de manera constante. Estos resultados indican un aprendizaje efectivo del modelo sobre los datos.
 
 ## 🔍 Matriz de Confusión del Modelo ViT
@@ -416,6 +421,8 @@ Durante las 50 épocas de entrenamiento, el modelo logró mejorar progresivament
 La siguiente imagen muestra una **matriz de confusión simulada** del modelo Vision Transformer (ViT) evaluado sobre el conjunto de prueba de MNIST. La precisión total estimada fue de aproximadamente **79%**.
 
 <img width="838" height="702" alt="image" src="https://github.com/user-attachments/assets/0254e0ac-b5ce-414f-8d6c-57e0728799c2" />
+
+
 Esta matriz permite observar cómo se desempeña el modelo al clasificar cada dígito del 0 al 9. Las diagonales representan las predicciones correctas. Los errores más frecuentes ocurren entre dígitos visualmente similares, como por ejemplo:
 - El dígito **2** que a veces se confunde con el **8**.
 - El dígito **7** que puede confundirse con el **1** o el **2**.
