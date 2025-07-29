@@ -420,12 +420,10 @@ Durante las 50 épocas de entrenamiento, el modelo logró mejorar progresivament
 
 La siguiente imagen muestra una **matriz de confusión simulada** del modelo Vision Transformer (ViT) evaluado sobre el conjunto de prueba de MNIST. La precisión total estimada fue de aproximadamente **79%**.
 
-<img width="838" height="702" alt="image" src="https://github.com/user-attachments/assets/0254e0ac-b5ce-414f-8d6c-57e0728799c2" />
+<img width="838" height="702" alt="image" src="https://github.com/user-attachments/assets/4d195c27-ecdd-4fcb-a7a5-821635da0dce" />
 
 
-Esta matriz permite observar cómo se desempeña el modelo al clasificar cada dígito del 0 al 9. Las diagonales representan las predicciones correctas. Los errores más frecuentes ocurren entre dígitos visualmente similares, como por ejemplo:
-- El dígito **2** que a veces se confunde con el **8**.
-- El dígito **7** que puede confundirse con el **1** o el **2**.
+Esta matriz permite observar cómo se desempeña el modelo al clasificar cada dígito del 0 al 9.
 
 Este análisis ayuda a identificar posibles mejoras futuras en el modelo o en los datos de entrada.
 
