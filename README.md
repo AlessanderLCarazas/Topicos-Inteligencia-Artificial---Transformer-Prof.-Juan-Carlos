@@ -327,20 +327,10 @@ VisionTransformer model(
 
 ---
 
-## ⚙️ Compilación
+## 🚀 Programas de Ejecución
 
-### 🧪 Entrenamiento
+### **1. Entrenamiento Principal** (main.cpp)
 
-```bash
-g++ -std=c++17 -O3 -I clases -o transformer main.cpp cpp/transformer.cpp cpp/trainer.cpp cpp/matrix.cpp cpp/layers.cpp cpp/activations.cpp cpp/adam_optimizer.cpp
-./transformer
-```
-
-## 🔍 Predicción de Imagen
-```bash
-g++ -std=c++17 -O3 -I clases -o predecir predecir_imagen.cpp cpp/transformer.cpp cpp/trainer.cpp cpp/matrix.cpp cpp/layers.cpp cpp/activations.cpp cpp/adam_optimizer.cpp
-./predecir
-```
 **Funcionalidades:**
 
 - Carga datasets MNIST desde CSV
@@ -349,12 +339,15 @@ g++ -std=c++17 -O3 -I clases -o predecir predecir_imagen.cpp cpp/transformer.cpp
 - Early stopping cuando alcanza 90%+ precisión
 - Guarda automáticamente el mejor modelo
 
-### **2. Predicción de Imágenes** (`predecir_imagen.cpp`)
+## ⚙️ Compilación
 
 ```bash
-g++ -o predecir predecir_imagen.cpp cpp/*.cpp -std=c++17
-./predecir
+g++ -std=c++17 -O3 -I clases -o transformer main.cpp cpp/transformer.cpp cpp/trainer.cpp cpp/matrix.cpp cpp/layers.cpp cpp/activations.cpp cpp/adam_optimizer.cpp
+./transformer
 ```
+
+### **2. Predicción de Imágenes** (predecir_imagen.cpp)
+
 
 **Funcionalidades:**
 
@@ -362,11 +355,18 @@ g++ -o predecir predecir_imagen.cpp cpp/*.cpp -std=c++17
 - Lee imagen desde CSV
 - Realiza predicción con probabilidades
 
-### **3. Conversión de Imágenes** (`convertir_imagen_a_csv.py`)
+##  Predicción de Imagen
 
 ```bash
-python convertir_imagen_a_csv.py
+g++ -std=c++17 -O3 -I clases -o predecir predecir_imagen.cpp cpp/transformer.cpp cpp/trainer.cpp cpp/matrix.cpp cpp/layers.cpp cpp/activations.cpp cpp/adam_optimizer.cpp
+./predecir
 ```
+
+### **3. Conversión de Imágenes** (convertir_imagen_a_csv.py)
+
+bash
+python convertir_imagen_a_csv.py
+
 
 **Funcionalidades:**
 
