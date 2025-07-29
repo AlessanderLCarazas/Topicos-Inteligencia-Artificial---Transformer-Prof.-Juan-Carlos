@@ -1,5 +1,7 @@
 # Vision Transformer (ViT) Implementation in C++
 
+link video: https://drive.google.com/drive/folders/1MhQ94SVj6kMDyrxGK_a6jPyzSJEf2fRM?usp=drive_link 
+
 ## 👨‍🏫 Integrantes del Proyecto
 
 - **Apaza Condori, Jhon Antony**  
